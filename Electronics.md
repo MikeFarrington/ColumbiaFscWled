@@ -2,10 +2,13 @@
 This documentation is being written approximately 2.5 years after initial development and may not be entirely accurate.
 
 # WIRING WARNING
-Power should only every flow outward from the light connectors coming out of the control box. Light strips do not need termination, and SHOULD NEVER RETURN TO THE CONTROL BOX!  This will likely destroy the electronics within the control box, and may cause a dangerous "thermal runaway" condition within the batteries which can lead to fire (unlikely, but can't be ruled out).
+Ligting power/data should only every flow outward from the light connectors coming out of the control box. Light strips do not need termination, and SHOULD NEVER RETURN TO THE CONTROL BOX!  This will likely destroy the electronics within the control box, and may cause a dangerous "thermal runaway" condition within the batteries which can lead to fire (unlikely, but can't be ruled out).
 
 # DESIGN WARNING
 This hardware was designed and assembled by a hobbyist and not a professional electroncis engineer.  As such, there is no design documentation (no drawings or 3D designs).
+
+# BATTERY WARNING
+If using exposed battery cells, such as an 18650 format, a safe chemistry should be used.  For example, if using Lithium Ion batters, a "LiFe / LiFePO4" chemistry should be used as these are unlikely to enter "thermal runaway" if abused, punctured, or not charged with the proper hardware.  All batteries should contain their own Battery Management System (BMS) to further protect against damage during charge and discharge.
 
 # Hardware Design Overview
 The lighting control boxes utilize a WiFi-enabled ESP32-based microcontroller development board, along with power circuitry to accept a wide range of input voltages.  The electronics are enclosed within a project box that appears waterproof, but is not fully waterproof and should not be used outdoors.
